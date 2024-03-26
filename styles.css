@@ -1,0 +1,379 @@
+*{
+    box-sizing: border-box;
+}
+.dowload_button{
+  color: #8D8D8D;
+ }
+ 
+body{
+  height: 94vh;
+  /* background: rgb(26, 105, 173); */
+  margin:0;
+}
+#ui{
+    width: 100%;
+    max-width: 400px;
+    height: 100% ;
+
+    margin: 0 auto;
+    background: #181818;
+    font-family: 'Manrope', sans-serif;
+    display: flex;
+    flex-direction: column;
+
+    
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+}
+#header-elements{
+    display:  flex;
+    align-items: center;
+    justify-content: space-between;
+     width: 100%;
+    padding-left: 1em;
+    padding-right: 1em;
+     
+     
+ }
+ 
+.hidden{
+    display: none;
+}
+#searchIcon{
+    cursor: pointer;
+    padding-right: 0.5em;
+    font-size: 1.5em;
+    color: #D1183E;
+}
+#searchIcon:hover{
+    color:#FFFFFF;
+}
+h1{
+    color:#dddddd;
+    font-size: 2em;
+}
+#search-container{
+   display: flex;
+   align-items: center;
+   padding: 0.2em;
+   transition: ease-in-out;
+   gap: 1em
+    
+
+   
+   
+
+}
+#searchInput{
+     
+    padding: 0.5em;
+    font-size: 1.3em;
+    border: none;
+    border-radius: 0.3em;
+    flex: 1;
+    outline: none;
+    margin-left: 10px;
+    border-radius: 1.6em;
+    color: #FFFFFF;
+    background-color: #898989;
+
+}
+ 
+.hideAppName{
+     
+    display: none;
+    
+}
+
+
+#play_shuffle_controls button{
+    padding: 0.3em 2em;
+    font-size: 1.3em;
+    border: none;
+    border-radius: 0.9em;
+    color: #D1183E; 
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+    cursor: pointer;
+     
+    
+ 
+    
+    
+}
+i{
+    padding-top: 5px;
+}
+ 
+ 
+ 
+#play_shuffle_controls {
+display: flex;
+justify-content: space-between;
+padding: 0.5em ;
+
+}
+
+#songsDsiplay{
+    height: 68%;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  
+    /* background-color: black; */
+}
+.currentSong-Details{
+  color: #D1183E;
+    padding-left: 0.7em;
+}
+.currentSogArtistName{
+color: #a5a4a4;
+  
+
+}
+hr{
+ /* background-color:  #181818; */
+ display: none;
+}
+ 
+#currentSongPlayingDsiplay{
+    flex-grow: 1;
+    border-radius:0.5em 0.5em 0  0;
+    margin-top: -5px;
+}
+.songContainer{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 3em;
+    margin-bottom: 1em;
+    cursor: pointer;
+    padding: 0 0.7em;
+    padding-right: 1.5em;
+    margin-bottom: 0px;
+    
+    /* background-color: red; */
+    
+     
+}
+hr{
+  margin-top: 0px;;
+  /* margin-bottom: 0px; */
+}
+#songsDsiplay{
+    overflow: auto
+}
+
+.music_image{
+
+  width: 50px;
+  height: 40px;
+  /* background-color: red; */
+  border-radius: 0.4em;
+  /* box-shadow: inset 0 0 50px black; */
+  filter: brightness(60%);
+  border: solid 3px #181818;
+}
+.music_data{
+     
+   width: 70%;
+   
+}
+.music_title{
+  text-wrap:nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 1.15em; 
+  }
+  
+  .artist_name{
+    font-size:0.8em;
+    text-wrap:nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color:#898989;
+  }
+   
+  .bottomPrimary{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.6em;
+    background:#141414;
+    color: #FFFFFF;
+     
+    border: none;
+    cursor:pointer;
+    padding-right: 1.5em;
+  }
+  .bottomSecondary{
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between;
+    padding: 1em 1.3em;
+    font-size: large;
+    padding-bottom: 4em;
+    
+
+
+  }
+  .bottomSecondary i{
+    color: #FFFFFF;
+  }
+  #middle_display{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 45%;
+    align-items: center;
+  }
+  #curetSongDetailsMainView{
+ display: flex;
+ flex-direction: column;
+ gap: 3em;
+
+  }
+  #curetSongDetailsMainView i{
+    cursor: pointer;
+  }
+  #span_display{
+    display: flex;
+    justify-content: space-evenly;
+
+  }
+   i:hover{
+    color: orangered;
+    cursor: pointer;
+  }
+
+  .secondary_image{
+   width: 16em;
+   height: 10em;
+   border-radius: 0.7em;
+   object-fit:cover;
+   border:solid orangered;
+   box-shadow:  0 0 15px orangered;
+  }
+  .secondarySongDetails{
+    /* margin-top: 3.5em; */
+     text-transform:capitalize;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    /* text-overflow: ellipsis ; */
+    color: #FFFFFF;
+     
+
+    
+    
+     
+  }
+  
+  .secondaryViewSongTitle {
+    display: inline-block;
+    font-size: 2em;
+    width: 300px;
+    overflow: hidden;
+     
+
+  }
+  
+  .secondaryViewSongTitle span {
+    display: inline-block;
+    text-wrap: nowrap;
+    white-space: nowrap;
+    animation: scroll 10s linear infinite;
+    /* animation-delay: -25s; */
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  
+ 
+  #currentsongsFullControls{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2em;
+    /* background-color: red; */
+    padding: 0 1em;
+    color: #FFFFFF;
+    
+  }
+
+
+  .currentSogImage{
+    width: 50px;
+    height: 40px;
+    border-radius: 0.4em
+  }
+  .currentSong-Details{
+    width: 75%;
+    
+     
+      
+  }
+  #currentMusicSpan{
+ width: 65%;
+  }
+  #progressBar{
+    overflow: hidden;
+     appearance: none;
+     width: 100%;
+     height: 0.8em;
+     border-radius: 0.4em;
+      background-color: #FDFDFD;
+     /* background-color: orangered; */
+
+  }
+  #progressBar::-webkit-slider-thumb {
+    /* Customize the appearance of the thumb */
+    
+    appearance: none;
+     
+    width: 0.8em;
+    height: 0.8em;
+    background-color:#D1183E; /* Color of the thumb */
+    border-radius: 50%; /* Make it round */
+    cursor: pointer;
+    box-shadow:  -210px 0 0 205px #D1183E ;
+    
+  }
+  
+  
+  #progressBar::-moz-range-thumb {
+    /* Customize the appearance of the thumb */ 
+    appearance: none;
+    width: 1em;
+    height: 1em;
+    background-color:#D1183E; /* Color of the thumb */
+    border-radius: 50%; /* Make it round */
+    cursor: pointer;
+  }
+  #fall_back{
+    font-size: 1.2em;
+  }
+
+  /* 
+   */
+   
+  
+  
+  
+  
+   
