@@ -6,7 +6,7 @@
   color: #8D8D8D;
  }
 body{
-  height: 100vh;
+  /* height: 100vh; */
   /* background: rgb(26, 105, 173); */
   margin:0;
   padding: 0;
@@ -407,5 +407,14 @@ hr{
     background:#a51230; /* Color of the scrollbar thumb on hover */
   }
   
+  @media screen and (min-width: 500px) {
+    body {
+     background-color: unset;   
+     
+    }
+    #ui{
+      height: 100vh  git  ;
+    }
+}
   
    
