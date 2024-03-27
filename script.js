@@ -157,7 +157,7 @@
     console.log('current id',userData?.currentSongID);
     console.log('id clicked',id);
     isPlaying=true
-    if(!id ){
+     if(!id ){
     
         console.log('no current song')
         audio.src=userData?.loadedSongs[0]?.audio
@@ -170,7 +170,7 @@
         // audio.currentTime=userData?.currentSongTime;
         // playMusic(userData?.currentSongID)
         audio.play()
-        handleChangeView(userData?.currentSongID)
+        
        
     }
     else if(id!==userData?.currentSongID){
@@ -235,6 +235,7 @@ const handlePLayeOrpause=()=>{
   const shuffle=()=>{
     userData?.loadedSongs.sort(()=>Math.random()-0.5);
     updateDomWithMusic(userData?.loadedSongs);
+    // playMusic(userData?.currentSongID)
 
   }
   const previous=()=>{

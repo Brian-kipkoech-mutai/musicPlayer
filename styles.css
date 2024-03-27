@@ -6,11 +6,11 @@
   color: #8D8D8D;
  }
 body{
-  height: 94vh;
+  height: 100vh;
   /* background: rgb(26, 105, 173); */
   margin:0;
   padding: 0;
-  background: #181818;
+  background: #202020;
 }
 #ui{
     width: 100%;
@@ -144,14 +144,12 @@ color: #a5a4a4;
 
 }
 .emoji{
-  background-color:#a5a4a4;
+  background-color:#FFFFFF;
   padding: 0.1em 0.5em;
   border-radius: 1em;
-  box-shadow: 0 0 4px #D1183E;
+  margin-left: 10px;
 }
-li{
-  
-}
+ 
 hr{
  /* background-color:  #181818; */
  display: none;
