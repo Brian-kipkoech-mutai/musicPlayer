@@ -80,7 +80,8 @@
      async function fetchMusicByGenre(genre) {
       try {
         // environmental variable
-        const apiKey = process.env.JAMENDO_API_KEY; 
+        // const apiKey = process.env.JAMENDO_API_KEY; 
+        const apiKey="bb8d9ce6";
 
           const url = `https://api.jamendo.com/v3.0/tracks/?format=json&limit=${20}&tags=${genre}&client_id=${apiKey}`;
           const response = await fetch(url);
