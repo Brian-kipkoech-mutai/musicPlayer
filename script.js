@@ -12,6 +12,7 @@
   const ui =document.getElementById("ui")
    let searchState=false ; 
   let isRepeat=false;
+  let fetched=false;
 
 
   //
@@ -92,6 +93,7 @@
   
           const data = await response.json();
           updateDomWithMusic(data.results)
+          fetched=true;
 
           
       } catch (error) {
@@ -206,7 +208,10 @@
     updateBotomView()
    }
 const handlePLayeOrpause=()=>{
-    if(!isPlaying){
+    if (!fetched){
+        return
+    }
+    else if(!isPlaying){
         playMusic(userData?.currentSongID)
     }
     else{
