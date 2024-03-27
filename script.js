@@ -360,7 +360,7 @@ function handleChangeView(songId){
      </section>
      
      <section id="repeat">
-     ${isRepeat ? '<i class="fas fa-redo" onclick="repeat()"></i>' : '<i class="fas fa-undo" onclick="repeat()"></i>'}
+     ${isRepeat ? '<i class="fas fa-undo" onclick="repeat()"></i>' : '<i class="fas fa-redo" onclick="repeat()"></i>'}
      </section>
 
  </div>

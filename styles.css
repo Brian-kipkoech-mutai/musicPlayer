@@ -1,14 +1,16 @@
 *{
     box-sizing: border-box;
 }
+ 
 .dowload_button{
   color: #8D8D8D;
  }
- 
 body{
   height: 94vh;
   /* background: rgb(26, 105, 173); */
   margin:0;
+  padding: 0;
+  background: #181818;
 }
 #ui{
     width: 100%;
@@ -48,6 +50,9 @@ body{
     font-size: 1.5em;
     color: #D1183E;
 }
+.dowload_button{
+  color: #8D8D8D;
+ }
 #searchIcon:hover{
     color:#FFFFFF;
 }
@@ -90,7 +95,7 @@ h1{
 
 
 #play_shuffle_controls button{
-    padding: 0.3em 2em;
+    padding: 0.3em 1.5em;
     font-size: 1.3em;
     border: none;
     border-radius: 0.9em;
@@ -116,7 +121,7 @@ i{
 #play_shuffle_controls {
 display: flex;
 justify-content: space-between;
-padding: 0.5em ;
+padding: 1em ;
 
 }
 
@@ -366,14 +371,33 @@ hr{
     cursor: pointer;
   }
   #fall_back{
-    font-size: 1.2em;
+    font-size: 1.3em;
   }
 
   /* 
    */
    
   
+   ::-webkit-scrollbar {
+    width: 5px; /* Set the width of the scrollbar */
+  }
   
+  /* Style the scrollbar track */
+  ::-webkit-scrollbar-track {
+    background:#FFFFFF; /* Color of the scrollbar track */
+    border-radius: 2em;
+  }
+  
+  /* Style the scrollbar thumb */
+  ::-webkit-scrollbar-thumb {
+    background:#D1183E; /* Color of the scrollbar thumb */
+    border-radius: 5px; /* Roundness of the scrollbar thumb */
+  }
+  
+  /* Change scrollbar thumb on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background:#a51230; /* Color of the scrollbar thumb on hover */
+  }
   
   
    
