@@ -182,7 +182,8 @@
     else if(id==userData?.currentSongID){
         // audio.currentTime=userData?.currentSongTime;
         // playMusic(userData?.currentSongID)
-        audio.play()
+        // audio.play()
+        handleChangeView(id)
         
        
     }
