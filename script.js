@@ -41,10 +41,12 @@
      if(!searchInput.classList.contains('hidden')){
         //  header_elements.style.justifyContent='center'
         //  header_elements.style.gap='5px'
-         search_container.style.width='100%'
+        //  search_container.style.width='100%'
          console.log('full search');
          searchIcon.onclick=handleSearch;
         //  header_elements.style.paddingLeft="0px" 
+        const searchMessage =document.getElementById("searchMessage")
+        songsDsiplay.removeChild(searchMessage)
         
         searchIcon.style.paddingBottom="0.4em"
       }
@@ -99,12 +101,16 @@
           }
   
           const data = await response.json();
-          updateDomWithMusic(data.results)
+          console.log('json length',data.results.length);
+          data.results.length==0?songsDsiplay.innerHTML=`<div id="searchMessage">
+          <p>No results found. Please try a different search term.</p>
+      </div>`:updateDomWithMusic(data.results);
           fetched=true;
 
           
       } catch (error) {
           console.error(`Error fetching data: ${error}`);
+          songsDsiplay.innerHTML=`Error fetching data: ${error}`
           throw error;
       }
   }
