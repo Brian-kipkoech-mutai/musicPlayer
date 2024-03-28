@@ -6,6 +6,7 @@
   const play_shuffle_controls=document.getElementById('play_shuffle_controls')
   const songsDsiplay=document.getElementById('songsDsiplay')
   const playOrPauseText=document.getElementById('playOrPauseText')
+  
 //   const PlayButton=document.getElementById('PlayButton')
    const currentSongPlayingDsiplay=document.getElementById('currentSongPlayingDsiplay')
   const topPlayOrpauseButton =document.getElementById('topPlayOrpauseButton')
@@ -43,6 +44,9 @@
          search_container.style.width='100%'
          console.log('full search');
          searchIcon.onclick=handleSearch;
+        //  header_elements.style.paddingLeft="0px" 
+        
+        searchIcon.style.paddingBottom="0.4em"
       }
      else{
         header_elements.style.justifyContent='space-between'
@@ -50,6 +54,9 @@
         header_elements.style.padding='unset';
         header_elements.style.padding='0.2em'
          console.log('display');
+        header_elements.style= 'padding-bottom: 0.45em';
+        searchIcon.style.paddingBottom="0.2em"
+         
          
 
      }
@@ -149,7 +156,7 @@
 
        })
        console.log('dowloadbtn',dowloadButton);
-       dowloadButton.style.color='#D1183E'
+       dowloadButton.style.color='#FFFFFF'
        current.style.color="#D1183E" 
      }
 

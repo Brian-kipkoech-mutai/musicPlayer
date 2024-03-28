@@ -16,7 +16,7 @@ body{
 #ui{
     width: 100%;
     max-width: 400px;
-    height: 94vh ;
+    height: 93vh ;
 
     margin: 0 auto;
     background: #181818;
@@ -38,6 +38,8 @@ body{
      width: 100%;
     padding-left: 1em;
     padding-right: 1em;
+    padding-bottom: 0.45em;
+    
      
      
  }
@@ -47,9 +49,14 @@ body{
 }
 #searchIcon{
     cursor: pointer;
-    padding-right: 0.5em;
+    /* padding-right: 0.5em; */
     font-size: 1.5em;
     color: #D1183E;
+    padding-bottom: 1.2em;
+     
+    
+     
+    
 }
 .dowload_button{
   color: #8D8D8D;
@@ -64,9 +71,14 @@ h1{
 #search-container{
    display: flex;
    align-items: center;
+   justify-content: space-between;
    padding: 0.2em;
+   
+   /* padding-left: 0px; */
    transition: ease-in-out;
-   gap: 1em
+   gap: 1em;
+    
+   
     
 
    
@@ -76,12 +88,13 @@ h1{
 #searchInput{
      
     padding: 0.5em;
+    
     font-size: 1.3em;
     border: none;
     border-radius: 0.3em;
-    flex: 1;
+    /* flex: 1; */
     outline: none;
-    margin-left: 10px;
+    margin-left: 0px;
     border-radius: 1.6em;
     color: #FFFFFF;
     background-color: #898989;
@@ -96,7 +109,8 @@ h1{
 
 
 #play_shuffle_controls button{
-    padding: 0.3em 1.5em;
+    padding: 0.3em 0em;
+    width: 45%;
     font-size: 1.3em;
     border: none;
     border-radius: 0.9em;
@@ -191,8 +205,7 @@ hr{
   /* background-color: red; */
   border-radius: 0.4em;
   /* box-shadow: inset 0 0 50px black; */
-  filter: brightness(60%);
-  border: solid 3px #181818;
+  filter: brightness(60%); 
 }
 .music_data{
      
@@ -413,7 +426,7 @@ hr{
      
     }
     #ui{
-      height: 100vh  git  ;
+      height: 100vh  
     }
 }
   
