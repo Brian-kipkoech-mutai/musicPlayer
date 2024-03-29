@@ -46,7 +46,7 @@
          searchIcon.onclick=handleSearch;
         //  header_elements.style.paddingLeft="0px" 
         const searchMessage =document.getElementById("searchMessage")
-        songsDsiplay.removeChild(searchMessage)
+        searchMessage&&songsDsiplay.removeChild(searchMessage)
         
         searchIcon.style.paddingBottom="0.4em"
       }
