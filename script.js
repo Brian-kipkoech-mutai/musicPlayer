@@ -182,7 +182,7 @@
     else if(id==userData?.currentSongID){
         // audio.currentTime=userData?.currentSongTime;
         // playMusic(userData?.currentSongID)
-        // audio.play()
+        audio.play()
         handleChangeView(id)
         
        
@@ -269,6 +269,7 @@ const handlePLayeOrpause=()=>{
     const index =userData?.loadedSongs.indexOf(song);
     if(userData?.loadedSongs[userData?.loadedSongs.indexOf(song)+1]){
         audio.src=userData?.loadedSongs[index+1].audio
+        //  const currentAudio=audio.src;
         const id =userData?.loadedSongs[index+1].id;
         userData.currentSongID=userData?.loadedSongs[index+1].id;
        playMusic(id)  
